@@ -27,7 +27,7 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE: O(1), (  1(password) + 1(bannedpasswords) + 1(boolean/banned)  )
+  // O(1), (  1(password) + 1(bannedpasswords) + 1(boolean/banned)  )
   public static boolean isBanned(String password) {
     String[] bannedPasswords = {"password", "hello", "qwerty"};
     boolean banned = false;
