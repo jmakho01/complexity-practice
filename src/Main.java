@@ -175,18 +175,18 @@ public class Main {
   // What is the time complexity of your solution?
   // YOUR ANSWER HERE: O(1)
   public static String emailLookupEfficient(HashMap<String, String> namesToEmails, String queryName) {
-        if (namesToEmails.containsKey(queryName)) {
-                      return namesToEmails.get(queryName);
-              }
-              else {
-                  return "Person not found";
-              }
-          }
+    if (namesToEmails.containsKey(queryName)) {
+      return namesToEmails.get(queryName);
+    }
+    else {
+      return "Person not found";
+    }
+  }
 
   // What is the time complexity of this method?
   // assume that each String is bounded by a constant length
   // (assume the set and list have the same number of elements)
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE: O(n^2), where n = for(String word : wordSet) * n = wordList.contains(word)
   public static boolean hasCommon(HashSet<String> wordSet, ArrayList<String> wordList) {
     for(String word : wordSet) {
       if(wordList.contains(word)) {
