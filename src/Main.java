@@ -199,16 +199,15 @@ public class Main {
   // Do not change the datatype of wordSet or wordList.
   // assume that each String is bounded by a constant length
   // What is the time complexity of your new solution?
-  // YOUR ANSWER HERE O(1)
+  // YOUR ANSWER HERE O(n)
   public static boolean hasCommonEfficient(HashSet<String> wordSet, ArrayList<String> wordList) {
-      for(String word : wordList){
-  
-        if (wordSet.contains(word)) {
-            return true;
-            }
+    for(String word : wordList) {
+      if (wordSet.contains(word)) {
+          return true;
+        }
       }
       return false;
-}
+  }
 
 
   // Suppose you are building a dashboard that displays real-time stock prices.
@@ -216,7 +215,7 @@ public class Main {
   // The prices will be updated frequently throughout the day, and you need to efficiently update
   // and access the current price for each stock. The order of the ticker symbols is not important.
   // What would be a good choice of data structure?
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE: HashMap
 
   // Suppose you are building a music player application where users can create playlists.
   // Songs can be added to the end of the playlist in the order the user chooses, and the user can
